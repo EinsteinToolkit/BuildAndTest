@@ -172,8 +172,8 @@ CactusPUGH/PUGHSlab
 !URL      = https://bitbucket.org/cactuscode/cactuspughio.git
 !REPO_PATH= $2
 !CHECKOUT =
-CactusPUGHIO/IOHDF5
-CactusPUGHIO/IOHDF5Util
+#CactusPUGHIO/IOHDF5
+#CactusPUGHIO/IOHDF5Util
 
 # CactusTest thorns
 !TARGET   = $ARR
@@ -211,20 +211,20 @@ CactusTest/TestTypes
 !REPO_PATH= $2
 !CHECKOUT = CactusUtils/Accelerator CactusUtils/OpenCLRunTime
 #DISABLED CactusUtils/Accelerator
-CactusUtils/Formaline
-CactusUtils/MemSpeed
+#CactusUtils/Formaline
+#CactusUtils/MemSpeed
 CactusUtils/NaNCatcher
 CactusUtils/NaNChecker
 CactusUtils/Nice
 CactusUtils/NoMPI
 #DISABLED CactusUtils/OpenCLRunTime
 CactusUtils/SystemStatistics
-CactusUtils/SystemTopology
+#CactusUtils/SystemTopology
 CactusUtils/TerminationTrigger
 CactusUtils/TimerReport
 CactusUtils/Trigger
 CactusUtils/Vectors
-CactusUtils/WatchDog
+#CactusUtils/WatchDog
 
 # CactusWave thorns
 !TARGET   = $ARR
@@ -255,7 +255,7 @@ Carpet/Carpet
 Carpet/CarpetEvolutionMask
 Carpet/CarpetIOASCII
 Carpet/CarpetIOBasic
-Carpet/CarpetIOHDF5
+#Carpet/CarpetIOHDF5
 Carpet/CarpetIOScalar
 Carpet/CarpetIntegrateTest
 Carpet/CarpetInterp
@@ -273,9 +273,9 @@ Carpet/CycleClock
 Carpet/HighOrderWaveTest
 Carpet/LoopControl
 Carpet/PeriodicCarpet
-Carpet/ReductionTest
-Carpet/ReductionTest2
-Carpet/ReductionTest3
+#Carpet/ReductionTest
+#Carpet/ReductionTest2
+#Carpet/ReductionTest3
 Carpet/RegridSyncTest
 Carpet/TestCarpetGridInfo
 Carpet/TestLoopControl
