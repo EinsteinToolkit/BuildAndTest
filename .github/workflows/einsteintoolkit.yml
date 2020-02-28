@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@v2
       
     - name: Install packages
-      run: apt-get update && apt-get install -y git nano build-essential git subversion gfortran mpich libhdf5-serial-dev libfftw3-dev libgsl0-dev libssl-dev liblapack-dev hdf5-tools ccache pkg-config texlive-latex-extra tex4ht locales
+      run: sudo apt-get update && sudo apt-get install -y git nano build-essential git subversion gfortran mpich libhdf5-serial-dev libfftw3-dev libgsl0-dev libssl-dev liblapack-dev hdf5-tools ccache pkg-config texlive-latex-extra tex4ht locales
       
     - name: Download GetComponents
       run: |
