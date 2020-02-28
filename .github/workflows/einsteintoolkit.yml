@@ -57,4 +57,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: summary.log
-        path: /home/runner/simulations/tests_sim/tests_sim/output-0000/TEST/sim/summary.log
+        path: /home/runner/simulations/tests_sim/output-0000/TEST/sim/summary.log
