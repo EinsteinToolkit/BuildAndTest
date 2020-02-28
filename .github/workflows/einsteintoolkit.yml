@@ -56,5 +56,5 @@ jobs:
     - name: Upload test results file
       uses: actions/upload-artifact@v1
       with:
-        name: summary.log
+        name: summary.txt
         path: /home/runner/simulations/tests_sim/output-0000/TEST/sim/summary.log
