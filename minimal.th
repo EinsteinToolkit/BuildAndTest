@@ -135,3 +135,12 @@ CactusTest/TestStrings
 CactusTest/TestTable
 CactusTest/TestTimers
 CactusTest/TestTypes
+
+# Additional Cactus thorns
+!TARGET   = $ARR
+!TYPE     = svn
+!URL      = https://github.com/EinsteinToolkit/$1-$2.git/trunk
+ExternalLibraries/HDF5
+ExternalLibraries/MPI
+ExternalLibraries/pthreads
+ExternalLibraries/zlib
