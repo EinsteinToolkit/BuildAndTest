@@ -41,7 +41,7 @@ jobs:
       run: |
         cd Cactus
         simfactory/bin/sim setup-silent
-        simfactory/bin/sim build -j4 --thornlist ../minimal.th
+        time simfactory/bin/sim build -j4 --thornlist ../minimal.th
 
     - name: Run Hello World
       run: |
