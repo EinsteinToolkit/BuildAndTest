@@ -51,4 +51,4 @@ jobs:
     - name: Run tests
       run: |
         cd Cactus
-        simfactory/bin/sim create-run --testsuite --procs 1 --num-threads 1 tests"
+        simfactory/bin/sim create-run --testsuite --procs 1 --num-threads 1 tests
