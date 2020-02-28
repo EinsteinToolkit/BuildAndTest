@@ -51,4 +51,10 @@ jobs:
     - name: Run tests
       run: |
         cd Cactus
-        simfactory/bin/sim create-run --testsuite --procs 1 --num-threads 1 tests
+        simfactory/bin/sim create-run --testsuite --procs 1 --num-threads 1 tests_sim
+    
+    - name: Upload test results file
+      uses: actions/upload-artifact@v1
+      with:
+        name: summary.log
+        path: $HOME/simulations/tests_sim/output-0000/TEST/sim/summary.log
