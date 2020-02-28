@@ -47,3 +47,8 @@ jobs:
       run: |
         cd Cactus
         simfactory/bin/sim create-run helloworld --parfile arrangements/CactusExamples/HelloWorld/par/HelloWorld.par
+        
+    - name: Run tests
+      run: |
+        cd Cactus
+        simfactory/bin/sim create-run --testsuite --procs 1 --num-threads 1 tests"
