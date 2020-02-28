@@ -285,6 +285,5 @@ Carpet/Timers
 !TARGET   = $ARR
 !TYPE     = svn
 !URL      = https://github.com/EinsteinToolkit/$1-$2.git/trunk
-!CHECKOUT = ExternalLibraries/OpenBLAS ExternalLibraries/OpenCL ExternalLibraries/pciutils ExternalLibraries/PETSc
 
 ExternalLibraries/MPI
