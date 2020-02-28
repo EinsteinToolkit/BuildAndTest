@@ -100,7 +100,6 @@ CactusTest/TestInclude1
 CactusTest/TestInclude2
 CactusTest/TestLoop
 CactusTest/TestMath
-CactusTest/TestMoL
 CactusTest/TestPar
 CactusTest/TestReduce
 CactusTest/TestSchedule
