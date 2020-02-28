@@ -140,6 +140,7 @@ CactusTest/TestTypes
 !TARGET   = $ARR
 !TYPE     = svn
 !URL      = https://github.com/EinsteinToolkit/$1-$2.git/trunk
+!CHECKOUT = 
 ExternalLibraries/HDF5
 ExternalLibraries/MPI
 ExternalLibraries/pthreads
