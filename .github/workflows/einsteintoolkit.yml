@@ -37,6 +37,11 @@ jobs:
       #run: ./GetComponents --parallel https://bitbucket.org/einsteintoolkit/manifest/raw/master/einsteintoolkit.th
       run: ./GetComponents --parallel minimal.th
 
+    - name: Fake a test failure
+      run: |
+        grep -v '^4' Cactus/arrangements/CactusTest/TestArrays/test/arrays/gf1d.xl >tmp.xl
+        mv tmp.xl Cactus/arrangements/CactusTest/TestArrays/test/arrays/gf1d.xl
+
     - name: Build the toolkit
       run: |
         cd Cactus
