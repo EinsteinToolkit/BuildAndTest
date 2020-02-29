@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+set -u
+
+summary=$1
+
+awk -v OFS="\t" '/Run details for configuration/,/============/ \
+{if (NF==2) {thorn=substr($1,1,length($1)-1); test=$2;}\
+ else if (thorn != "" && NF > 1)\
+ {status = substr($1,1,length($1)-1);
+  print thorn, test, status}}' $summary
