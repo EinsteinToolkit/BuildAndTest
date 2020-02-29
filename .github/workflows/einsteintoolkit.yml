@@ -62,7 +62,7 @@ jobs:
         table-from-summary /home/runner/simulations/tests_sim/output-0000/TEST/sim/summary.log >results-table.txt
         while read thorn test result; do
           if [ $result = Success ]; then
-            echo "::debug ::Test $thorn/$test succeeded"
+            echo "::error ::Test $thorn/$test succeeded"
           elif [ $result = Failure ]; then
             echo "::error ::Test $thorn/$test failed"
           fi
