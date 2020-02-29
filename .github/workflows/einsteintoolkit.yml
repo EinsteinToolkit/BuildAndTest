@@ -9,9 +9,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: Test annotations
-      run: echo "::error file=app.js,line=10,col=15::Something went wrong"
-
     - name: Install packages
       run: sudo apt-get update && sudo apt-get install -y git nano build-essential git subversion gfortran mpich libhdf5-serial-dev libfftw3-dev libgsl0-dev libssl-dev liblapack-dev hdf5-tools ccache pkg-config  locales
       # texlive-latex-extra tex4ht
@@ -62,7 +59,7 @@ jobs:
         table-from-summary /home/runner/simulations/tests_sim/output-0000/TEST/sim/summary.log >results-table.txt
         while read thorn test result; do
           if [ $result = Success ]; then
-            echo "::error ::Test $thorn/$test succeeded"
+            echo "::warning ::Test $thorn/$test succeeded"
           elif [ $result = Failure ]; then
             echo "::error ::Test $thorn/$test failed"
           fi
