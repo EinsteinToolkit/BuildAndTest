@@ -56,8 +56,19 @@ jobs:
         cd Cactus
         simfactory/bin/sim create-run --testsuite --procs 1 --num-threads 1 tests_sim
     
+    - name: Analyse test results
+      run: |
+        export PATH=$PWD/bin:$PATH
+        table-from-summary /home/runner/simulations/tests_sim/output-0000/TEST/sim/summary.log >results-table.txt
+
     - name: Upload test results file
       uses: actions/upload-artifact@v1
       with:
-        name: summary.txt
+        name: summary.log
         path: /home/runner/simulations/tests_sim/output-0000/TEST/sim/summary.log
+
+    - name: Upload test results table
+      uses: actions/upload-artifact@v1
+      with:
+        name: results-table.txt
+        path: results-table.txt
