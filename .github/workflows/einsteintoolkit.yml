@@ -60,6 +60,11 @@ jobs:
       run: |
         export PATH=$PWD/bin:$PATH
         table-from-summary /home/runner/simulations/tests_sim/output-0000/TEST/sim/summary.log >results-table.txt
+        while read thorn test result; do
+          if [ $result = Success ]; then
+            echo "::debug ::Test $thorn/$test succeeded"
+          fi
+        done < results-table.txt
 
     - name: Upload test results file
       uses: actions/upload-artifact@v1
