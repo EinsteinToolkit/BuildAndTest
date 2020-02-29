@@ -63,6 +63,8 @@ jobs:
         while read thorn test result; do
           if [ $result = Success ]; then
             echo "::debug ::Test $thorn/$test succeeded"
+          elif [ $result = Failure ]; then
+            echo "::error ::Test $thorn/$test failed"
           fi
         done < results-table.txt
 
